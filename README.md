@@ -14,24 +14,32 @@ These are all notes to me:
 - gulp-sass — compiles your Sass files into CSS
 - gulp-cssnano — minifies your CSS files
 - gulp-concat — concatenates (combines) multiple JavaScript files into one large file
-- gulp-uglify — minifies your JavaScript files
-- npm install gulp-sass gulp-cssnano gulp-concat gulp-uglify
+- gulp-uglify — minifies your JavaScript files but for ES6: var uglify = require('gulp-uglify-es').default;
+- npm install gulp-sass gulp-cssnano gulp-concat gulp-uglify-es (if using es6 ... and of course I am. otherwise just take off -es)
 
 3. install gulp-cli (instead of running plain gulp globally) install --global gulp-cli
 
 ### Set up file structure:
 
 - Root
-  _ index.html
-  _ gulpfile.js (THE SHIZZ)
-  _ package.json
-  _ node*modules (directory)
-  * app (holds my scripts and styles. work here)
-  _ js
-  _ script.js
-  \_ _possibleother.js _
-  _ style.scss
-  _ dist (stores the final compiled JavaScript and CSS files - do not work here)
+
+  - index.html
+
+  - gulpfile.js (THE SHIZZ)
+
+  - package.json
+
+  - node_modules (directory)
+
+  - app (holds my scripts and styles. work here)
+
+    - js
+    - script.js
+    - _possibleother.js _
+
+    - style.scss
+
+  - dist (stores the final compiled JavaScript and CSS files - do not work here)
 
 ### index.html
 

@@ -3,7 +3,7 @@ var cssnano = require('gulp-cssnano');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-
+//for es6: var uglify = require('gulp-uglify-es').default;
 //the sass shizz:
 gulp.task('sass', function() {
   return gulp
